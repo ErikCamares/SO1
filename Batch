@@ -1,0 +1,21 @@
+@echo off
+:menu 
+cls
+echo.              Menu
+echo.      a.-opcion-1
+echo.      d-salir-2
+echo.
+set /p opc = ingrese opcion:
+
+
+IF "%Opc%" =="a" goto op1
+IF "%Opc%" =="b" goto salir 
+
+:op1
+echo has elegido Opcion - 1
+::aqui van las lineas de comando de tu opcion 
+color b4
+pause
+goto menu
+:salir
+@cls&exit
